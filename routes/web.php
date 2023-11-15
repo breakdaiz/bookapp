@@ -29,7 +29,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/admin/dashboard', [AdminController::class, 'AdminDashBoard'])->name('admin.dashboard');
-
 
 require __DIR__.'/auth.php';
+
+// admin Group MIDDLEWARE
+
+Route::middleware(['auth','roles:admin'])->group(function () { 
+    Route::get('/admin/dashboard', [AdminController::class, 'AdminDashBoard'])->name('admin.dashboard');
+
+}); // End Group
