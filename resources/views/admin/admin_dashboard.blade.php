@@ -16,8 +16,8 @@
 	<link href="{{asset('backend/assets/css/pace.min.css')}}" rel="stylesheet"/>
 	<script src="{{asset('backend/assets/js/pace.min.js')}}"></script>
 	<!-- Bootstrap CSS -->
-	<link href="{{asset('backend/assets/css/bootstrap.min.css')}}" rel="stylesheet">
-	<link href="{{asset('backend/assets/css/bootstrap-extended.css')}}a" rel="stylesheet">
+	<link href="{{ asset('backend/assets/css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{ asset('backend/assets/css/bootstrap-extended.css') }}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 	<link href="{{asset('backend/assets/css/app.css')}}" rel="stylesheet">
 	<link href="{{asset('backend/assets/css/icons.css')}}" rel="stylesheet">
@@ -216,7 +216,7 @@
 	<script src="{{asset('backend/assets/plugins/chartjs/js/chart.js')}}"></script>
 	<script src="{{asset('backend/assets/js/index.js')}}"></script>
 	<!--app JS-->
-	<script src="{{asset('backend/')}}assets/js/app.js"></script>
+	<script src="{{asset('backend/assets/js/app.js')}}"></script>
 	<script>
 		new PerfectScrollbar(".app-container")
 	</script>
